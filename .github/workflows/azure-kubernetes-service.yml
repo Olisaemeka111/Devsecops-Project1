@@ -37,8 +37,8 @@ on:
 env:
   AZURE_CONTAINER_REGISTRY: "devsecopscontainerregistry2"
   CONTAINER_NAME: "devsecopsproject"  # Replace with the actual container name
-  RESOURCE_GROUP: "Arizona-k8s-resources"
-  CLUSTER_NAME: "Arizona-k8s"
+  RESOURCE_GROUP: "Devsecops_container_registry"
+  CLUSTER_NAME: "Devsecopsk8s"
   DEPLOYMENT_MANIFEST_PATH: "deployment.yaml"
 
 jobs:
