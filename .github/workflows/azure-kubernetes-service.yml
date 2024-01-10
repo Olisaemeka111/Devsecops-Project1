@@ -35,11 +35,11 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "your-azure-container-registry"
-  CONTAINER_NAME: "your-container-name"
-  RESOURCE_GROUP: "your-resource-group"
-  CLUSTER_NAME: "your-cluster-name"
-  DEPLOYMENT_MANIFEST_PATH: "your-deployment-manifest-path"
+  AZURE_CONTAINER_REGISTRY: "Devsecops_container_registry"
+  CONTAINER_NAME: "devsecopsproject"  # Replace with the actual container name
+  RESOURCE_GROUP: "Arizona-k8s-resources"
+  CLUSTER_NAME: "Arizona-k8s"
+  DEPLOYMENT_MANIFEST_PATH: "deployment.yaml"
 
 jobs:
   installAzureCLI:
