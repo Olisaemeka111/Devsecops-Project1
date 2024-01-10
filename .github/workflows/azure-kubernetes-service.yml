@@ -35,7 +35,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: "Devsecops_container_registry"
+  AZURE_CONTAINER_REGISTRY: "devsecopscontainerregistry2.azurecr.io"
   CONTAINER_NAME: "devsecopsproject"  # Replace with the actual container name
   RESOURCE_GROUP: "Arizona-k8s-resources"
   CLUSTER_NAME: "Arizona-k8s"
