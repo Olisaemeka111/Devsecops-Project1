@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:4cfc84f20e5aa783902ae6574ebbddd667d11473
+          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:af99b5e75b41cc32666b7eb00ee1cb2062b7b3f7
           ports:
             - containerPort: 3000
       strategy:
