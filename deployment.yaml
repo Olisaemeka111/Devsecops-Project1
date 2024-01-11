@@ -14,12 +14,16 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:latest
+          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:7353a8a24a382502f63ce5cbab63b69f84aeab52
           ports:
             - containerPort: 3000
-              
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  progressDeadlineSeconds: 1200 # Increase this value if needed
 
-              
 ---
 apiVersion: v1
 kind: Service
@@ -30,6 +34,6 @@ spec:
     app: react-app
   ports:
     - protocol: TCP
-      port: 80  # The port exposed by the service within the cluster
-      targetPort: 3000  # The port your React app is listening on inside the pod
+      port: 80
+      targetPort: 3000
   type: LoadBalancer
