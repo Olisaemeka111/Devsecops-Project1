@@ -22,7 +22,7 @@ spec:
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
-  progressDeadlineSeconds: 1200 # Increase this value if needed
+  progressDeadlineSeconds: 1800 # Increase this value if needed
 
 ---
 apiVersion: v1
