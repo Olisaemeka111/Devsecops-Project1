@@ -14,16 +14,12 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:af99b5e75b41cc32666b7eb00ee1cb2062b7b3f7
+          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:latest
           ports:
             - containerPort: 3000
-      strategy:
-        rollingUpdate:
-          maxSurge: 25%
-          maxUnavailable: 25%
-      progressDeadlineSeconds: 750  # Increase this value if needed
+              
 
-
+              
 ---
 apiVersion: v1
 kind: Service
