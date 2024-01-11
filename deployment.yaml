@@ -14,14 +14,13 @@ spec:
     spec:
       containers:
         - name: react-app-container
-          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:7a7444c06e040bd863e721ab642cd849d4150685
+          image: devsecopscontainerregistry2.azurecr.io/devsecopsproject:4cfc84f20e5aa783902ae6574ebbddd667d11473
           ports:
             - containerPort: 3000
       strategy:
         rollingUpdate:
           maxSurge: 25%
           maxUnavailable: 25%
-        type: RollingUpdate
       progressDeadlineSeconds: 750  # Increase this value if needed
 
 
