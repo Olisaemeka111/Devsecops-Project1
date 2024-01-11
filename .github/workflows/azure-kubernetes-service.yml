@@ -12,7 +12,7 @@ env:
   CONTAINER_NAME: "devsecopsproject"
   RESOURCE_GROUP: "Devsecops_container_registry"
   CLUSTER_NAME: "Devsecopsk8s"
-  DEPLOYMENT_MANIFEST_PATH: "deployment.yaml"
+  DEPLOYMENT_MANIFEST_PATH: ".github/workflows/azure-kubernetes-service.yml"
   KUBECONFIG: /home/runner/work/_temp/kubeconfig_1704950947621
 
 jobs:
